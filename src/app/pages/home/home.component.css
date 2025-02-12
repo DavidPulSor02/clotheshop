@@ -16,6 +16,7 @@ h1 {
 }
 
 img {
+
     max-width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -38,4 +39,22 @@ img {
     /* Recorta la imagen para llenar el cuadrado */
     border-radius: 10px;
     /* Bordes ligeramente redondeados */
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 250px;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

@@ -10,6 +10,9 @@ import { ProductosComponent } from './pages/productos/productos.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { CategoriaMujerComponent } from './pages/categoria-mujer/categoria-mujer.component';
+import { CategoriaHombreComponent } from './pages/categoria-hombre/categoria-hombre.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     ProductosComponent,
     CarritoComponent,
+    CategoriaMujerComponent,
+    CategoriaHombreComponent,
 
 
   ],
   imports: [
+    CommonModule,
     ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,

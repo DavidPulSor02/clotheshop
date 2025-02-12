@@ -1,14 +1,49 @@
 <div class="container mt-4">
+    <h2 class="text-center mb-4 fw-bold">Nuestros Productos mas Vendidos</h2>
     <div class="row">
-        <div class="col-md-4" *ngFor="let product of products">
-            <div class="card">
-                <img [src]="product.image" class="card-img-top" alt="{{ product.name }}">
-                <div class="card-body">
+        <div class="col-md-4 mb-4" *ngFor="let product of products">
+            <div class="card h-100 shadow-sm">
+                <img [src]="product.image" class="card-img-top product-img" alt="{{ product.name }}">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">{{ product.name }}</h5>
                     <p class="card-text">${{ product.price }}</p>
-                    <button class="btn btn-primary">Agregar al carrito</button>
+                    <button class="btn btn-primary mt-auto">Agregar al carrito</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<footer class="bg-dark text-light text-center p-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 class="fw-bold">Tienda de Ropa</h5>
+                <p class="small">Moda y estilo para toda la familia. Encuentra lo último en tendencias.</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold">Contáctanos</h5>
+                <p class="small mb-1"><i class="bi bi-envelope"></i> </p>
+                <p class="small"><i class="bi bi-phone"></i> +34 123 456 789</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold">Síguenos</h5>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="text-light me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light me-3 fs-4"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-light fs-4"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary my-3">
+        <div class="row bg-secondary py-2">
+            <div class="col text-center">
+                <a href="#" class="text-white small me-3">Inicio</a>
+                <a href="#" class="text-white small me-3">Tienda</a>
+                <a href="#" class="text-white small me-3">Contacto</a>
+                <a href="#" class="text-white small">Política de Privacidad</a>
+            </div>
+        </div>
+        <p class="small mt-3 mb-0">&copy; 2025 Tienda de Ropa. Todos los derechos reservados.</p>
+    </div>
+</footer>

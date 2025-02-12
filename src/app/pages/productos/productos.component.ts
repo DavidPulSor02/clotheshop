@@ -10,6 +10,7 @@ import { Product } from '../../models/product';
 })
 export class ProductosComponent implements OnInit {
   products: Product[] = []; // <-- Agregamos la propiedad products
+  ofertaProductos: any;
 
   constructor(private productService: ProductService) { }
 
