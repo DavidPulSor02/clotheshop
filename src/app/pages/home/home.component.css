@@ -1,0 +1,41 @@
+h1 {
+    color: #222;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.category-img {
+    width: 150px;
+    /* Ancho fijo */
+    height: 150px;
+    /* Alto fijo */
+    object-fit: cover;
+    /* Recorta la imagen para llenar el cuadrado */
+    border-radius: 10px;
+    /* Bordes ligeramente redondeados */
+}
